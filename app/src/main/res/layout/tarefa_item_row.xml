@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="0dp"
+        android:layout_height="120dp"
+        android:layout_margin="8dp"
+        app:cardCornerRadius="4dp"
+        app:layout_constraintTop_toTopOf="parent"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tarefa_tv_titulo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Titulo"
+                android:layout_margin="8dp"
+                style="@style/TextAppearance.AppCompat.Headline"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"/>
+
+            <TextView
+                android:id="@+id/tarefa_tv_descricao"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:text="Descricao "
+                android:layout_marginBottom="4dp"
+                android:layout_marginTop="4dp"
+                app:layout_constraintStart_toStartOf="@id/tarefa_tv_titulo"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tarefa_tv_titulo"
+                app:layout_constraintBottom_toTopOf="@id/view_color"
+                style="@style/TextAppearance.AppCompat.Body1"/>
+
+
+            <View
+                android:id="@+id/view_color"
+                android:layout_width="0dp"
+                android:layout_height="4dp"
+                android:background="@android:color/holo_red_dark"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+
+        </android.support.constraint.ConstraintLayout>
+
+
+
+    </android.support.v7.widget.CardView>
+
+
+
+</android.support.constraint.ConstraintLayout>
